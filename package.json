@@ -1,0 +1,76 @@
+{
+  "name": "Deguvon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest --detectOpenHandles",
+    "prettier-fix": "prettier --write **/*.js",
+    "prettier-check": "prettier --list-different **/*.js",
+    "lint-fix": "eslint --fix .",
+    "lint-check": "eslint .",
+    "rename": "react-native-rename",
+    "postinstall": "npx jetify",
+    "ra": "adb shell input text 'RR'",
+    "da": "adb shell input keyevent 82"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.7",
+    "@react-navigation/material-bottom-tabs": "^5.1.7",
+    "@react-navigation/material-top-tabs": "^5.1.8",
+    "@react-navigation/native": "^5.1.5",
+    "@react-navigation/stack": "^5.2.9",
+    "prop-types": "^15.7.2",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-dropdownalert": "^4.2.1",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-orientation": "https://github.com/kuronosu/react-native-orientation.git",
+    "react-native-paper": "^3.6.0",
+    "react-native-reanimated": "^1.7.1",
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.4.0",
+    "react-native-tab-view": "^2.14.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-video": "^4.4.5",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-persist-filesystem-storage": "^2.1.0",
+    "redux-saga": "^1.0.2",
+    "reduxsauce": "^1.0.1",
+    "rn-fetch-blob": "^0.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-native": "^3.6.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^1.16.4",
+    "react-native-rename": "^2.4.1",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-native)/.+"
+    ]
+  }
+}
