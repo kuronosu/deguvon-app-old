@@ -10,12 +10,6 @@ import VideoPlayerActions from '../../../Stores/VideoPlayer/Actions'
 
 const keyExtractor = (item, index) => `episode_${item.number}_${index}`
 
-const reverse = (data, setData) => {
-  let tmp = data.slice()
-  tmp.reverse()
-  setData(tmp)
-}
-
 const getOrderText = (data) => {
   if (data.length > 0 && data[0].number < data[data.length - 1].number) return 'Menor a mayor'
   return 'Mayor a menor'
@@ -27,6 +21,12 @@ const EpisodeList = ({ found, list, animeName, animeID, playEpisode }) => {
     setEpisodes(list)
   }, [found, list])
 
+  const reverse = _ => {
+    let tmp = episodes.slice()
+    tmp.reverse()
+    setEpisodes(tmp)
+  }
+
   const renderEpisode = ({ item }) =>
     <Episode
       episode={item}
@@ -37,7 +37,7 @@ const EpisodeList = ({ found, list, animeName, animeID, playEpisode }) => {
     return <GeneralLayout>
       <Button
         color='#424242'
-        onPress={() => reverse(episodes, setEpisodes)}
+        onPress={reverse}
       > {getOrderText(episodes)} </Button>
       <FlatList
         data={episodes}
