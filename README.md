@@ -1,5 +1,5 @@
 # Deguvon
-## App for anime streaming
+App for anime streaming
 
 - TODOS
 1) Too long title in the navigation bar causes an overflow
