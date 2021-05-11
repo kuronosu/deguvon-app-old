@@ -1,4 +1,9 @@
 # Deguvon
+
+> (EN) This project is no longer in development and was replaced by [deguvon](https://github.com/kuronosu/deguvon)
+
+> (ES) Este proyecto ya no está en desarrollo y fue reemplazado por [deguvon](https://github.com/kuronosu/deguvon)
+
 App for anime streaming
 
 - TODO
